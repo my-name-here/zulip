@@ -1648,11 +1648,11 @@ def check_send_message(sender, client, message_type_name, message_to,
         message_to,
         topic_name)
     if message_content == 'welcome':
-      message_content = 'Welcome to Zulip :octopus:'
+        message_content = 'Welcome to Zulip :octopus:'
     if message_content == 'latest xkcd':
-      message_content = 'https://xkcd.com'
+        message_content = 'https://xkcd.com'
     if message_content == 'xkcd':
-      message_content = 'https://m.xkcd.com/random/comic'
+        message_content = 'https://m.xkcd.com/random/comic'
     message = check_message(sender, client, addressee,
                             message_content, realm, forged, forged_timestamp,
                             forwarder_user_profile, local_id, sender_queue_id)
